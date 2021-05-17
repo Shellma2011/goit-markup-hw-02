@@ -1,0 +1,61 @@
+:root {
+  --logo-link-web-color: #2196F3;
+  --logo-link-studio-color: #000000;
+
+;
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* НАВИГАЦИЯ ПО САЙТУ */
+
+/* logo-WebStudio */
+.logo-WebStudio {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-link-web{
+  color: var(--logo-link-web-color);
+}
+
+.logo-link-studio{
+  color: var(--logo-link-studio-color);
+}
+
+.div-list {
+  text-decoration: none;
+}
+
+.div-list-navigation {
+  color: #212121;
+  padding: 68px, 16px; 679px; 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  }
+
+.div-list-contacts {
+}
