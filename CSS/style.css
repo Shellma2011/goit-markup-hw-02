@@ -1,6 +1,8 @@
 :root {
+  --hero-footer-background-color: #2f303a;
   --logo-link-web-color: #2196f3;
   --logo-link-studio-color: #000000;
+  --logo-link-telephone-color: #757575;
 }
 
 body {
@@ -12,10 +14,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
-}
-
-.div-list {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -25,9 +24,23 @@ header {
 
 /* ВЕРХНЯЯ ЛИНИЯ */
 
+.div-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.div-list a:hover,
+.div-list a:active {
+  color: var(--logo-link-web-color);
+}
+
 /* logo-WebStudio */
 .logo-WebStudio {
   font-family: "Raleway", sans-serif;
+  color: #ffffff;
   font-size: 26px;
   font-weight: 700;
   font-style: normal;
@@ -43,20 +56,40 @@ header {
   color: var(--logo-link-studio-color);
 }
 
-.div-list-navigation li {
-  font-family: Roboto;
-  font-style: normal;
+/* навигация по сайту */
+.div-list-navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 
 .div-list-navigation-item {
 }
 
-.div-list-contacts li {
+.nav-studio {
+  color: var(--logo-link-web-color);
+}
+
+.nav-studio a:hover,
+.nav-studio a:active {
+  color: var(--logo-link-web-color);
+}
+
+.nav-portfolio {
+  color: var(--logo-link-web-color);
+}
+
+.nav-portfolio a:hover,
+.nav-portfolio a:active {
+  color: var(--logo-link-web-color);
+}
+
+.nav-contacts {
+}
+
+/* TEL and MAIL */
+.div-list-contacts {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -65,17 +98,17 @@ header {
 }
 
 .div-list-contacts-mail {
-  color: #2196f3;
+  color: var(--logo-link-web-color);
 }
 
 .div-list-contacts-tel {
-  color: #757575;
+  color: var(--logo-link-telephone-color);
 }
 
 /* ШАПКА */
 
 .div-hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-background-color);
 }
 .div-hero-tagline {
   font-style: normal;
@@ -89,19 +122,23 @@ header {
 }
 
 .div-hero-button {
-  padding: 200px, 50px, 430px, 700px;
+  width: 200px;
+  height: 50px;
   border: 1px solid var(--logo-link-web-color);
   background-color: var(--logo-link-web-color);
   border-radius: 4px;
 }
+
 .div-hero-text {
-  padding: 136px, 30px, 440px, 732px;
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
   font-weight: 700;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -109,6 +146,10 @@ header {
 }
 
 /* ОСОБЕННОСТИ */
+
+.features {
+  color: #ffffff;
+}
 
 .section-features {
 }
@@ -121,12 +162,10 @@ header {
 
 .features-title {
   font-weight: 700;
-  font-style: normal;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 
 .features-discription {
@@ -193,7 +232,7 @@ header {
 /* ПОДВАЛ */
 
 .footer-contacts-list {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-background-color);
 }
 
 .footer-contacts-address {
@@ -206,13 +245,11 @@ header {
 }
 
 .contacts-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #ffffff99;
 }
 
 .contacts-title-mail {
