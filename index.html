@@ -15,19 +15,28 @@
 <body>
 
     <!-- Верхняя линия -->
-    <header>
+    <header class="upper-line">
+        <a href="./index.html" class="logo-WebStudio"><span class="logo-link-web">Web</span><span class="logo-link-studio">Studio</span></a>
         <nav class="div-list">
-            <a href="./index.html" class="logo-WebStudio"><span class="logo-link-web">Web</span><span class="logo-link-studio">Studio</span></a>
             <ul class="div-list-navigation">
-                <li class="div-list-navigation-item"><a href="./index.html"><span class="nav-studio">Студия</span></a></li>
-                <li class="div-list-navigation-item"><a href="./portfolio.html"><span class="">Портфолио</span></a></li>
-                <li class="div-list-navigation-item"><a href=""><span class="nav-contacts">Контакты</span></a></li>
+                <li><a href="./index.html">
+                        <span class="nav-studio">Студия</span>
+                    </a>
+                </li>
+                <li><a href="./portfolio.html">
+                        <span class="">Портфолио</span>
+                    </a>
+                </li>
+                <li><a href="">
+                        <span class="nav-contacts">Контакты</span>
+                    </a>
+                </li>
             </ul>
         </nav>
-        <ul class="div-list-contacts">
-            <li><a href="mailto:info@devstudio.com" class="div-list-contacts-mail">info@devstudio.com</a></li>
-            <li><a href="tel:++380961111111" class="div-list-contacts-tel">+38 096 111 11 11</a></li>
-        </ul>
+            <ul class="div-list-contacts">
+                <li><a href="mailto:info@devstudio.com" class="div-list-contacts-mail">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="div-list-contacts-tel">+38 096 111 11 11</a></li>
+            </ul>
     </header>
 
     <!-- Тело -->
@@ -41,7 +50,7 @@
         <!-- Особенности -->
         <h2 class="features">Особенности</h2>
         <section class="section-features">
-            <ul class="section-features-list">
+            <ul>
                 <li class="features-list">
                     <h3 class="features-title">Внимание к деталям</h3>
                     <p class="features-discription">Идейные соображения, а также начало повседневной работы по
@@ -69,11 +78,12 @@
         <section>
             <h2 class="section-heading">Чем мы занимаемся</h2>
             <ul class="photo-box">
-                <li class="photo-title"><img src="./images/img1.jpg" alt="руки на клавиатуре, перед экраном" width=370>
+                <li><img src="./images/img1.jpg" alt="руки на клавиатуре, перед экраном" width=370>
                 </li>
-                <li class="photo-title"><img src="./images/img2.jpg" alt="смартфон в руке перед ноутбуком" width=370>
+                <li><img src="./images/img2.jpg" alt="смартфон в руке перед ноутбуком" width=370>
                 </li>
-                <li class="photo-title"><img src="./images/img3.jpg" alt="цветовая палитра на планшете" width=370></li>
+                <li><img src="./images/img3.jpg" alt="цветовая палитра на планшете" width=370>
+                </li>
             </ul>
         </section>
 
@@ -81,24 +91,24 @@
         <section>
             <h2 class="section-heading">Наша команда</h2>
             <ul class="section-team">
-                <li class="team-list">
-                    <img class="team-photo" src="./images/фотоИгорьДемьяненко.jpg" alt="фото Игорь Демьяненко"
+                <li>
+                    <img src="./images/фотоИгорьДемьяненко.jpg" alt="фото Игорь Демьяненко"
                         width=270>
                     <h3 class="team-name">Игорь Демьяненко</h3>
                     <p class="team-position">Product Designer</p>
                 </li>
-                <li class="team-list">
-                    <img class="team-photo" src="./images/фотоОльгаРепина.jpg" alt="фото Ольга Репина" width=270>
+                <li>
+                    <img src="./images/фотоОльгаРепина.jpg" alt="фото Ольга Репина" width=270>
                     <h3 class="team-name">Ольга Репина</h3>
                     <p class="team-position">Frontend Developer</p>
                 </li>
-                <li class="team-list">
-                    <img class="team-photo" src="./images/фотоНиколайТарасов.jpg" alt="фото Николай Тарасов" width=270>
+                <li>
+                    <img src="./images/фотоНиколайТарасов.jpg" alt="фото Николай Тарасов" width=270>
                     <h3 class="team-name">Николай Тарасов</h3>
                     <p class="team-position">Marketing</p>
                 </li>
-                <li class="team-list">
-                    <img class="team-photo" src="./images/фотоМихаилЕрмаков.jpg" alt="фото Михаил Ермаков" width=270>
+                <li>
+                    <img src="./images/фотоМихаилЕрмаков.jpg" alt="фото Михаил Ермаков" width=270>
                     <h3 class="team-name">Михаил Ермаков</h3>
                     <p class="team-position">UI Designer</p>
                 </li>
@@ -112,9 +122,8 @@
             <a href="./index.html" class="logo-WebStudio"><span class="logo-link-web">Web</span>Studio</a>
             <address class="footer-contacts-address">г. Киев, пр-т Леси Украинки, 26</address>
             <ul class="contacts-list">
-                <li class="contacts-title"><a class="contacts-title-mail"
-                        href="mailto:info@example.com">info@example.com</a></li>
-                <li class="contacts-title"><a class="contacts-title-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li><a class="contacts-title-mail" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="contacts-title-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </div>
     </footer>

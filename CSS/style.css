@@ -1,16 +1,19 @@
 :root {
+  --hero-section: #e5e5e5;
   --hero-footer-background-color: #2f303a;
   --logo-link-web-color: #2196f3;
   --logo-link-studio-color: #000000;
-  --logo-link-telephone-color: #757575;
+  --logo-link-tel-text-color: #757575;
+  --logo-hero: #ffffff;
+  --logo-heading: #212121;
+  --logo-mail-tel-footer: #ffffff99;
+  --button-portfolio-background-color: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-ul {
-  list-style: none;
+  background-color: var(--logo-hero);
+  color: var(--logo-heading);
 }
 
 a {
@@ -18,18 +21,14 @@ a {
   text-decoration: none;
 }
 
-header {
-  display: flow-root;
-}
-
 /* ВЕРХНЯЯ ЛИНИЯ */
 
-.div-list {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+.upper-line {
+  background-color: var(--logo-hero);
+}
+
+.div-list li {
+  list-style: none;
 }
 
 .div-list a:hover,
@@ -40,10 +39,9 @@ header {
 /* logo-WebStudio */
 .logo-WebStudio {
   font-family: "Raleway", sans-serif;
-  color: #ffffff;
-  font-size: 26px;
+  color: var(--logo-hero);
   font-weight: 700;
-  font-style: normal;
+  font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
 }
@@ -62,9 +60,6 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-}
-
-.div-list-navigation-item {
 }
 
 .nav-studio {
@@ -89,20 +84,20 @@ header {
 }
 
 /* TEL and MAIL */
+
+.div-list-contacts li {
+  list-style: none;
+}
 .div-list-contacts {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--logo-link-tel-text-color);
 }
 
 .div-list-contacts-mail {
   color: var(--logo-link-web-color);
-}
-
-.div-list-contacts-tel {
-  color: var(--logo-link-telephone-color);
 }
 
 /* ШАПКА */
@@ -111,14 +106,13 @@ header {
   background-color: var(--hero-footer-background-color);
 }
 .div-hero-tagline {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  color: var(--logo-hero);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .div-hero-button {
@@ -130,34 +124,21 @@ header {
 }
 
 .div-hero-text {
-  width: 136px;
-  height: 30px;
-  left: 732px;
-  top: 440px;
   font-weight: 700;
-  font-style: normal;
-  font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
+  color: var(--logo-hero);
   letter-spacing: 0.06em;
-  color: #ffffff;
 }
 
 /* ОСОБЕННОСТИ */
 
 .features {
-  color: #ffffff;
+  color: var(--logo-hero);
 }
 
-.section-features {
-}
-
-.section-features-list {
-}
-
-.features-list {
+.section-features li {
+  list-style: none;
 }
 
 .features-title {
@@ -166,16 +147,18 @@ header {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--logo-heading);
 }
 
 .features-discription {
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--logo-link-tel-text-color);
 }
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
 .section-heading {
   font-style: normal;
@@ -184,39 +167,26 @@ header {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--logo-heading);
 }
 
-/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
-
-.photo-box {
-}
-
-.photo-title {
-}
-
-.photo-title-size {
+.photo-box li {
+  list-style: none;
 }
 
 /* НАША КОМАНДА */
 
-.section-team {
-}
-
-.team-list {
-}
-
-.team-photo {
+.section-team li {
+  list-style: none;
 }
 
 .team-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--logo-heading);
 }
 
 .team-position {
@@ -226,7 +196,7 @@ header {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--logo-link-tel-text-color);
 }
 
 /* ПОДВАЛ */
@@ -235,25 +205,58 @@ header {
   background-color: var(--hero-footer-background-color);
 }
 
+.footer-contacts-list li {
+  list-style: none;
+}
+
 .footer-contacts-address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--logo-hero);
 }
 
-.contacts-title {
+.contacts-list {
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 24 px;
   letter-spacing: 0.03em;
-  color: #ffffff99;
+  color: var(--logo-mail-tel-footer);
 }
 
-.contacts-title-mail {
+/* PORTFOLIO.HTML */
+
+.button-nav-portfolio li {
+  list-style: none;
+}
+.work-presentation li {
+  list-style: none;
 }
 
-.contacts-title-tel {
+.work-nav-button button :hover,
+.work-nav-button button :active {
+  color: var(--logo-link-web-color);
+}
+
+.nav-portfolio a:hover,
+.nav-portfolio a:active {
+  color: var(--logo-link-web-color);
+}
+
+.work-nav-button li {
+  background: var(--button-portfolio-background-color);
+  width: 145px;
+  height: 38px;
+  border-radius: 4px;
+}
+
+.work-nav-text li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--logo-heading);
 }
