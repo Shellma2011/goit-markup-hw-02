@@ -1,0 +1,143 @@
+/* цвет основного текста #212121*/
+/* вторичный цвет #757575 */
+/* белый #FFFFFF */
+/* акцент голубой #2196F3 */
+/* цвет почта и телефон rgba(255, 255, 255, 0,6) */
+/* цвет logo STUDIO #000000 */
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+
+/*  font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --white-color: #ffffff;
+  --accent-blue: #2196f3;
+  --color-mail-phone: rgba(255, 255, 255, 0.6);
+  --color-logo-STUDIO: #000000;
+  --main-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --hero-footer-background-color: #2F303A;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+  background-color: var(--secondary-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--accent-blue);
+}
+
+.header-logo-studio {
+  color: var(--color-logo-STUDIO);
+}
+
+/* Site-nav */
+
+.site-nav .link {
+  color: var(--main-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-blue);
+}
+
+/* Auth-nav */
+
+.auth-nav {
+    color: var(--color-mail-phone);
+}
+
+.auth-nav .link {
+  color: var(--secondary-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-blue);
+
+/* Hero */
+
+.section-hero {
+
+}
+
+.hero {
+  background-color: var(--hero-footer-background-color)
+}
+
+.hero-title {
+  color: var(--white-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--main-color);
+}
+
+/* Features */
+
+.feature-list .title {
+  color: var(--main-color);
+}
+
+.feature-list .text {
+  color: var(--secondary-color);
+}
+
+/* Work */
+
+/* Our team */
+
+.name {
+  color: var(--main-color);
+}
+
+.position {
+  color: var(--secondary-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--hero-footer-background-color);
+}
+
+.footer-logo-studio {
+  color: var(--white-color);
+}
+
+.footer-address {
+  color: var(--white-color);
+}
+
+.contacts-list {
+  color: var(--color-mail-phone);
+}
+
+/* Button */
+
+.button {
+}
+
+.button.primary {
+  background-color: var(--accent-blue);
+  color: var(--white-color);
+}
+
+.button.secondary {
+}
+

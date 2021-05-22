@@ -32,7 +32,7 @@ a {
 }
 
 .div-list a:hover,
-.div-list a:active {
+.div-list a:focus {
   color: var(--logo-link-web-color);
 }
 
@@ -42,7 +42,7 @@ a {
   color: var(--logo-hero);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
@@ -58,7 +58,7 @@ a {
 .div-list-navigation {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -91,7 +91,7 @@ a {
 .div-list-contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--logo-link-tel-text-color);
 }
@@ -108,17 +108,18 @@ a {
 .div-hero-tagline {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   color: var(--logo-hero);
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .div-hero-button {
+  font-family: inherit;
   width: 200px;
   height: 50px;
-  border: 1px solid var(--logo-link-web-color);
+  border: solid 0px;
   background-color: var(--logo-link-web-color);
   border-radius: 4px;
 }
@@ -126,9 +127,9 @@ a {
 .div-hero-text {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  color: var(--logo-hero);
+  line-height: 1.88;
   letter-spacing: 0.06em;
+  color: var(--logo-hero);
 }
 
 /* ОСОБЕННОСТИ */
@@ -144,7 +145,7 @@ a {
 .features-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-heading);
@@ -153,7 +154,7 @@ a {
 .features-discription {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-link-tel-text-color);
 }
@@ -161,10 +162,9 @@ a {
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
 .section-heading {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--logo-heading);
@@ -183,17 +183,16 @@ a {
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--logo-heading);
 }
 
 .team-position {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--logo-link-tel-text-color);
@@ -213,15 +212,15 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-hero);
 }
 
 .contacts-list {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24 px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-mail-tel-footer);
 }
@@ -231,32 +230,47 @@ a {
 .button-nav-portfolio li {
   list-style: none;
 }
+
+.work-nav-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--logo-heading);
+}
+
+.work-nav-button {
+  height: 38px;
+  border: solid 0px;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--button-portfolio-background-color);
+}
+
+.work-nav-button :hover,
+.work-nav-button :focus {
+  color: var(--logo-hero);
+  background-color: var(--logo-link-web-color);
+}
+
 .work-presentation li {
   list-style: none;
 }
 
-.work-nav-button button :hover,
-.work-nav-button button :active {
-  color: var(--logo-link-web-color);
-}
-
-.nav-portfolio a:hover,
-.nav-portfolio a:active {
-  color: var(--logo-link-web-color);
-}
-
-.work-nav-button li {
-  background: var(--button-portfolio-background-color);
-  width: 145px;
-  height: 38px;
-  border-radius: 4px;
-}
-
-.work-nav-text li {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
+.work-presentation-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--logo-heading);
+}
+
+.work-presentation-title {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--logo-link-tel-text-color);
 }
