@@ -26,7 +26,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
-  background-color: var(--secondary-background-color);
+  background-color: var(--main-background-colorr);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -109,6 +109,7 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
@@ -126,7 +127,7 @@ body {
 .feature-list .title {
   color: var(--main-color);
   font-weight: 700;
-  line-height: 0.88;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
